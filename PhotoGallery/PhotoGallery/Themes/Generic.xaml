@@ -11,9 +11,24 @@
         </Grid>
     </ControlTemplate>
 
+    <ControlTemplate x:Key="BottomRightButton" TargetType="Button">
+        <Grid>
+            <Border Width="30" Height="40">
+            </Border>
+            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
+
     <Style TargetType="Image" x:Key="BottomIcons">
         <Style.Setters>
             <Setter Property="MaxHeight" Value="25"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Image" x:Key="BottomRightIcons">
+        <Style.Setters>
+            <Setter Property="MaxWidth" Value="25"/>
         </Style.Setters>
     </Style>
 
@@ -105,4 +120,5 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+
 </ResourceDictionary>

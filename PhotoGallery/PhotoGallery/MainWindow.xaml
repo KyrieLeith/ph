@@ -5,7 +5,7 @@
         Height="400"
         Width="800"
         MinHeight="300"
-        MinWidth="395"
+        MinWidth="370"
         Icon="./icons/mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
@@ -17,9 +17,15 @@
         </ResourceDictionary>
     </Window.Resources>
     <DockPanel>
-        <StackPanel x:Name="TopMenu" DockPanel.Dock="Top" Height="40" Background="AliceBlue">
-            
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Top" Height="40">            
+            <StackPanel DockPanel.Dock="Right" Width="120" Background="Red" >
+
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Left" Background="Green" Width="120">
+
+            </StackPanel>
+            <StackPanel Width="0"/>
+        </DockPanel>
         <StatusBar DockPanel.Dock="Bottom" Height="70">
             <StatusBar.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -55,15 +61,15 @@
                             <Button Template="{DynamicResource BottomArrowButton}" Style="{DynamicResource BottomButtonStyle}">
                                 <Image Source="icons/bottom5.png" Style="{DynamicResource BottomArrowIcons}" />
                     </Button>
-                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
-                        <Image Source="icons/bottom6.png" Style="{DynamicResource BottomIcons}" />
+                            <Button Template="{DynamicResource BottomRightButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom6.png" Style="{DynamicResource BottomRightIcons}" />
                     </Button>
-                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
-                        <Image Source="icons/bottom7.png" Style="{DynamicResource BottomIcons}" />
+                            <Button Template="{DynamicResource BottomRightButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom7.png" Style="{DynamicResource BottomRightIcons}" />
                     </Button>
                             <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
-                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
-                        <Image Source="icons/bottom8.png" Style="{DynamicResource BottomIcons}" />
+                            <Button Template="{DynamicResource BottomRightButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom8.png" Style="{DynamicResource BottomRightIcons}" />
                     </Button>                    
                 </StackPanel>
                     </Border>
