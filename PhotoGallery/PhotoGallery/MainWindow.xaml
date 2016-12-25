@@ -4,12 +4,12 @@
         Title="Windows Live Photogallery"
         Height="400"
         Width="800"
-        MinHeight="160"
-        MinWidth="260"
+        MinHeight="300"
+        MinWidth="300"
         Icon="./mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
-    <DockPanel Grid.Row="0">
+    <DockPanel>
         <StackPanel x:Name="TopMenu" DockPanel.Dock="Top" Height="40" Background="AliceBlue">
             
         </StackPanel>
@@ -21,5 +21,8 @@
                 </StackPanel>
             </StatusBarItem>
         </StatusBar>
+        <DockPanel>
+            
+        </DockPanel>
     </DockPanel>
 </Window>
