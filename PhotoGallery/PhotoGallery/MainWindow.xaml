@@ -22,9 +22,14 @@
             <StackPanel DockPanel.Dock="Right">
 
             </StackPanel>
-            <StackPanel DockPanel.Dock="Left">
-
-            </StackPanel>
+            <WrapPanel DockPanel.Dock="Left" Style="{DynamicResource TopMenuArrowPanel}">
+                    <Button Template="{DynamicResource TopArrowButton}">
+                        <Image Source="icons/leftarr.png" Style="{DynamicResource TopArrowIcons}"/>
+                    </Button>
+                    <Button Template="{DynamicResource TopArrowButton}">
+                        <Image Source="icons/rightarr.png" Style="{DynamicResource TopArrowIcons}"/>
+                    </Button>
+                </WrapPanel>
             <StackPanel Width="0"/>            
         </DockPanel>
         </Border>

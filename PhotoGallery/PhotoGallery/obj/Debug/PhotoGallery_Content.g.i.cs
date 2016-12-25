@@ -8,13 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom3.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom4.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom5.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom6.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom7.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/bottom8.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/rightarr.png")]
 
 
