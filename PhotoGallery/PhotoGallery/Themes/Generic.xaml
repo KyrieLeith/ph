@@ -1,5 +1,18 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     >
-    
+    <ControlTemplate x:Key="BottomButton" TargetType="Button">
+        <Grid>
+            <Border Width="20" Height="20" CornerRadius="1">
+                <Border.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="Red" />
+                        <GradientStop Offset="0.9" Color="{Binding Path=Background.Color, RelativeSource={RelativeSource TemplatedParent}}" />
+                    </RadialGradientBrush>
+                </Border.Background>
+            </Border>
+            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
 </ResourceDictionary>

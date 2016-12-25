@@ -106,7 +106,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="mainicon.ico" />
+    <Resource Include="icons\mainicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\bottom1.png" />
+    <Resource Include="icons\bottom2.png" />
+    <Resource Include="icons\bottom3.png" />
+    <Resource Include="icons\bottom4.png" />
+    <Resource Include="icons\bottom5.png" />
+    <Resource Include="icons\bottom6.png" />
+    <Resource Include="icons\bottom7.png" />
+    <Resource Include="icons\bottom8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

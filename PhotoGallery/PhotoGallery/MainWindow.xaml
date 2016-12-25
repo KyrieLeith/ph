@@ -6,23 +6,63 @@
         Width="800"
         MinHeight="300"
         MinWidth="300"
-        Icon="./mainicon.ico"
+        Icon="./icons/mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <DockPanel>
         <StackPanel x:Name="TopMenu" DockPanel.Dock="Top" Height="40" Background="AliceBlue">
             
         </StackPanel>
         <StatusBar DockPanel.Dock="Bottom" Height="50">
-            <StatusBarItem>
-                <StackPanel Width="auto" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button Content="123"/>
-                    <Button Content="123"/>
-                </StackPanel>
-            </StatusBarItem>
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="40">
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom1.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom2.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom3.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom4.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom5.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom6.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom7.png"/>
+                    </Button>
+                    <Button Template="{DynamicResource BottomButton}">
+                        <Image Source="icons/bottom8.png"/>
+                    </Button>
+                </StackPanel>                    
+            </StatusBarItem>                            
         </StatusBar>
-        <DockPanel>
-            
+        
+        <DockPanel>            
         </DockPanel>
     </DockPanel>
 </Window>
