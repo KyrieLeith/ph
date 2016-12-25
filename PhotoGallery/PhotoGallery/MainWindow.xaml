@@ -17,15 +17,17 @@
         </ResourceDictionary>
     </Window.Resources>
     <DockPanel>
-        <DockPanel DockPanel.Dock="Top" Height="40">            
-            <StackPanel DockPanel.Dock="Right" Width="120" Background="Red" >
+        <Border DockPanel.Dock="Top" Style="{DynamicResource TopMenuWrapper}">
+        <DockPanel>            
+            <StackPanel DockPanel.Dock="Right">
 
             </StackPanel>
-            <StackPanel DockPanel.Dock="Left" Background="Green" Width="120">
+            <StackPanel DockPanel.Dock="Left">
 
             </StackPanel>
-            <StackPanel Width="0"/>
+            <StackPanel Width="0"/>            
         </DockPanel>
+        </Border>
         <StatusBar DockPanel.Dock="Bottom" Height="70">
             <StatusBar.ItemsPanel>
                 <ItemsPanelTemplate>
