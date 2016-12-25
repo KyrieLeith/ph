@@ -5,7 +5,7 @@
         Height="400"
         Width="800"
         MinHeight="300"
-        MinWidth="375"
+        MinWidth="395"
         Icon="./icons/mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
@@ -61,6 +61,7 @@
                             <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
                         <Image Source="icons/bottom7.png" Style="{DynamicResource BottomIcons}" />
                     </Button>
+                            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
                             <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
                         <Image Source="icons/bottom8.png" Style="{DynamicResource BottomIcons}" />
                     </Button>                    
