@@ -4,8 +4,7 @@
     
     <ControlTemplate x:Key="BottomButton" TargetType="Button">
         <Grid>            
-            <Border Width="40" Height="40">
-                <Image Width="40" Height="40" Source="{Binding Source}"/>                
+            <Border Width="40" Height="40">         
             </Border>
             <ContentPresenter HorizontalAlignment="Center"
                                   VerticalAlignment="Center"/>
@@ -14,9 +13,26 @@
 
     <Style TargetType="Image" x:Key="BottomIcons">
         <Style.Setters>
-            <Setter Property="Width" Value="30"/>
-            <Setter Property="Height" Value="30"/>
+            <Setter Property="MaxHeight" Value="25"/>
         </Style.Setters>
     </Style>
-        
+
+    <Style TargetType="Border" x:Key="BottomMenuBorder">
+        <Style.Setters>
+            <Setter Property="CornerRadius" Value="17"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="Background" Value="#D1E5FA"/>
+            <Setter Property="Opacity" Value="0.9"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="StackPanel" x:Key="BottomMenuPanel">
+        <Style.Setters>
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="10 0 10 0"/>
+        </Style.Setters>
+    </Style>
+
 </ResourceDictionary>
