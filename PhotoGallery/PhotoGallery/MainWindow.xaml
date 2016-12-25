@@ -9,7 +9,17 @@
         Icon="./mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
-    <DockPanel>
-        
+    <DockPanel Grid.Row="0">
+        <StackPanel x:Name="TopMenu" DockPanel.Dock="Top" Height="40" Background="AliceBlue">
+            
+        </StackPanel>
+        <StatusBar DockPanel.Dock="Bottom" Height="50">
+            <StatusBarItem>
+                <StackPanel Width="auto" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="123"/>
+                    <Button Content="123"/>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
     </DockPanel>
 </Window>
