@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/rightarr.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/top11.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/top12.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/top13.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/top14.ico")]
 
 

@@ -131,8 +131,8 @@
                         <GradientStop Color="#5197BF" Offset="1" />
                     </LinearGradientBrush>
                 </Setter.Value>
-            </Setter>
-            <Setter Property="Height" Value="40" />
+            </Setter>            
+            <Setter Property="Height" Value="auto" />
         </Style.Setters>
     </Style>
 
@@ -163,13 +163,42 @@
     <Style TargetType="WrapPanel" x:Key="TopMenuArrowPanel">
         <Style.Setters>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="10 0 0 0"/>
+            <Setter Property="Margin" Value="10 5 10 5"/>
         </Style.Setters>
     </Style>
 
     <Style TargetType="Image" x:Key="TopArrowIcons">
         <Style.Setters>
             <Setter Property="MaxWidth" Value="18"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Menu" x:Key="TopMenuStyle">
+        <Style.Setters>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="#5197BF" Offset="-0.5" />
+                        <GradientStop Color="#0D659C" Offset="0.5" />
+                        <GradientStop Color="#5197BF" Offset="1.5" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style.Setters>
+    </Style>
+
+    <ControlTemplate TargetType="MenuItem" x:Key="ParentItem">
+        <Grid>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
+
+    <Style TargetType="MenuItem" x:Key="ChildItem">
+        <Style.Setters>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#F0F0F0"/>
         </Style.Setters>
     </Style>
 </ResourceDictionary>

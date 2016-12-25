@@ -29,6 +29,88 @@
                     <Button Template="{DynamicResource TopArrowButton}">
                         <Image Source="icons/rightarr.png" Style="{DynamicResource TopArrowIcons}"/>
                     </Button>
+                    <Menu Style="{DynamicResource TopMenuStyle}">
+                        <MenuItem Header="New">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top1.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="File" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top11.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Edit">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top2.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Information">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top3.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Print">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top4.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Print to pdf" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top12.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Share">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top5.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Share via Picassa" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top13.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Email">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top6.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Publish">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top7.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Publish panorama" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top11.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Publish film" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top12.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Publish DVD" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top13.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Publish CD" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top14.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Reply">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top8.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Send reply" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top14.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
                 </WrapPanel>
             <StackPanel Width="0"/>            
         </DockPanel>
