@@ -182,7 +182,50 @@
             </StatusBarItem>                            
         </StatusBar>
         
-        <DockPanel>            
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Left" Width="200">
+                <TreeView>
+                    <TreeViewItem Header="All files">
+                        <TreeViewItem Header="Pictures"></TreeViewItem>
+                        <TreeViewItem Header="Video"></TreeViewItem>
+                        <TreeViewItem Header="Shared pictures"></TreeViewItem>
+                        <TreeViewItem Header="Shared video"></TreeViewItem>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Date">
+                        <TreeViewItem Header="2004">
+                            <TreeViewItem Header="January"></TreeViewItem>
+                            <TreeViewItem Header="February"></TreeViewItem>
+                            <TreeViewItem Header="March"></TreeViewItem>
+                            <TreeViewItem Header="April"></TreeViewItem>
+                        </TreeViewItem>
+                        <TreeViewItem Header="2005">
+                            <TreeViewItem Header="January"></TreeViewItem>
+                            <TreeViewItem Header="February"></TreeViewItem>
+                            <TreeViewItem Header="March"></TreeViewItem>
+                            <TreeViewItem Header="April"></TreeViewItem>
+                        </TreeViewItem>
+                        <TreeViewItem Header="2006">
+                            <TreeViewItem Header="January"></TreeViewItem>
+                            <TreeViewItem Header="February"></TreeViewItem>
+                            <TreeViewItem Header="March"></TreeViewItem>
+                            <TreeViewItem Header="April"></TreeViewItem>
+                        </TreeViewItem>
+                        <TreeViewItem Header="2007">
+                            <TreeViewItem Header="January"></TreeViewItem>
+                            <TreeViewItem Header="February"></TreeViewItem>
+                            <TreeViewItem Header="March"></TreeViewItem>
+                            <TreeViewItem Header="April"></TreeViewItem>
+                        </TreeViewItem>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Labels">
+                        <TreeViewItem Header="Add a new label"></TreeViewItem>
+                        <TreeViewItem Header="Delete the label"></TreeViewItem>
+                    </TreeViewItem>
+                </TreeView>
+            </DockPanel>
+            <DockPanel>
+                
+            </DockPanel>
         </DockPanel>
     </DockPanel>
 </Window>
