@@ -5,7 +5,7 @@
         Height="400"
         Width="800"
         MinHeight="300"
-        MinWidth="395"
+        MinWidth="370"
         Icon="./icons/mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
@@ -17,9 +17,120 @@
         </ResourceDictionary>
     </Window.Resources>
     <DockPanel>
-        <StackPanel x:Name="TopMenu" DockPanel.Dock="Top" Height="40" Background="AliceBlue">
-            
-        </StackPanel>
+        <Border DockPanel.Dock="Top" Style="{DynamicResource TopMenuWrapper}">
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Right" Style="{DynamicResource TopMenuArrowPanel}">
+                    <Menu Style="{DynamicResource TopMenuStyle}">
+                        <MenuItem Header="">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top9.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Help" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top11.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Exit">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top10.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </Menu>
+            </WrapPanel>
+            <WrapPanel DockPanel.Dock="Left" Style="{DynamicResource TopMenuArrowPanel}">
+                    <Button Template="{DynamicResource TopArrowButton}">
+                        <Image Source="icons/leftarr.png" Style="{DynamicResource TopArrowIcons}"/>
+                    </Button>
+                    <Button Template="{DynamicResource TopArrowButton}">
+                        <Image Source="icons/rightarr.png" Style="{DynamicResource TopArrowIcons}"/>
+                    </Button>
+                    <Menu Style="{DynamicResource TopMenuStyle}">
+                        <MenuItem Header="New">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top1.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="File" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top11.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Edit">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top2.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Information">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top3.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Print">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top4.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Print to pdf" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top12.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Share">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top5.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Share via Picassa" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top13.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Email">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top6.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Publish">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top7.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Publish panorama" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top11.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Publish film" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top12.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Publish DVD" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top13.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Publish CD" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top14.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Reply">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top8.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Send reply" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top14.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
+                </WrapPanel>
+            <StackPanel Width="0"/>            
+        </DockPanel>
+        </Border>
         <StatusBar DockPanel.Dock="Bottom" Height="70">
             <StatusBar.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -55,15 +166,15 @@
                             <Button Template="{DynamicResource BottomArrowButton}" Style="{DynamicResource BottomButtonStyle}">
                                 <Image Source="icons/bottom5.png" Style="{DynamicResource BottomArrowIcons}" />
                     </Button>
-                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
-                        <Image Source="icons/bottom6.png" Style="{DynamicResource BottomIcons}" />
+                            <Button Template="{DynamicResource BottomRightButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom6.png" Style="{DynamicResource BottomRightIcons}" />
                     </Button>
-                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
-                        <Image Source="icons/bottom7.png" Style="{DynamicResource BottomIcons}" />
+                            <Button Template="{DynamicResource BottomRightButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom7.png" Style="{DynamicResource BottomRightIcons}" />
                     </Button>
                             <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
-                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
-                        <Image Source="icons/bottom8.png" Style="{DynamicResource BottomIcons}" />
+                            <Button Template="{DynamicResource BottomRightButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom8.png" Style="{DynamicResource BottomRightIcons}" />
                     </Button>                    
                 </StackPanel>
                     </Border>

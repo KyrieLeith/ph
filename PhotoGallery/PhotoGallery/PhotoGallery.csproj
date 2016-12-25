@@ -118,6 +118,28 @@
     <Resource Include="icons\bottom7.png" />
     <Resource Include="icons\bottom8.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\leftarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\rightarr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\top1.png" />
+    <Resource Include="icons\top10.png" />
+    <Resource Include="icons\top11.png" />
+    <Resource Include="icons\top12.png" />
+    <Resource Include="icons\top13.png" />
+    <Resource Include="icons\top14.png" />
+    <Resource Include="icons\top2.png" />
+    <Resource Include="icons\top3.png" />
+    <Resource Include="icons\top4.png" />
+    <Resource Include="icons\top5.png" />
+    <Resource Include="icons\top6.png" />
+    <Resource Include="icons\top7.png" />
+    <Resource Include="icons\top8.png" />
+    <Resource Include="icons\top9.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
