@@ -186,7 +186,8 @@
             <DockPanel DockPanel.Dock="Left" Width="200">
                 <TreeView>
                     <TreeViewItem Header="All files">
-                        <TreeViewItem Header="Pictures"></TreeViewItem>
+                        <TreeViewItem Header="Pictures" >
+                        </TreeViewItem>
                         <TreeViewItem Header="Video"></TreeViewItem>
                         <TreeViewItem Header="Shared pictures"></TreeViewItem>
                         <TreeViewItem Header="Shared video"></TreeViewItem>
@@ -223,9 +224,9 @@
                     </TreeViewItem>
                 </TreeView>
             </DockPanel>
-            <DockPanel>
+            <DataGrid>
                 
-            </DockPanel>
+            </DataGrid>
         </DockPanel>
     </DockPanel>
 </Window>
