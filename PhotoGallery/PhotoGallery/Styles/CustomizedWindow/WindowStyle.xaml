@@ -176,11 +176,9 @@
 
                                 <Rectangle DockPanel.Dock="Left" Width="5" Fill="{StaticResource WindowBorderBrush}"/>
                                 <Rectangle DockPanel.Dock="Right" Width="5" Fill="{StaticResource WindowBorderBrush}"/>
-                                <Border
-                                    DockPanel.Dock="Bottom"
-                                    Background="#A0CAEE"
-                                    BorderThickness="0"
-                                    CornerRadius="0,0,10,10" />
+                                
+                                <Rectangle DockPanel.Dock="Bottom" Width="auto" Height="10" Fill="{StaticResource WindowBorderBrush}"/>
+                                
                                 <ContentPresenter />
                             </DockPanel>
                         </Border>
