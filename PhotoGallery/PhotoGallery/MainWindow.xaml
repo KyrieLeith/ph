@@ -4,12 +4,73 @@
         Title="Windows Live Photogallery"
         Height="400"
         Width="800"
-        MinHeight="160"
-        MinWidth="260"
-        Icon="./mainicon.ico"
+        MinHeight="300"
+        MinWidth="375"
+        Icon="./icons/mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <DockPanel>
+        <StackPanel x:Name="TopMenu" DockPanel.Dock="Top" Height="40" Background="AliceBlue">
+            
+        </StackPanel>
+        <StatusBar DockPanel.Dock="Bottom" Height="70">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Grid.Column="1">                
+                <WrapPanel>
+                    <Border Style="{DynamicResource BottomLeftMenuBorder}">
+                        <StackPanel Style="{DynamicResource BottomMenuLeftPanel}">
+                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
+                                <Image Source="icons/bottom1.png" Style="{DynamicResource BottomIcons}" />
+                            </Button>
+                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
+                                <Image Source="icons/bottom2.png" Style="{DynamicResource BottomIcons}" />
+                            </Button>
+                            <Button Template="{DynamicResource BottomArrowButton}" Style="{DynamicResource BottomButtonStyle}">
+                                <Image Source="icons/bottom3.png" Style="{DynamicResource BottomArrowIcons}" />
+                            </Button>
+                        </StackPanel>
+                    </Border>
+                    <Button Template="{DynamicResource BottomRoundButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom4.png" Style="{DynamicResource BottomIcons}" />
+                    </Button>
+                    <Border Style="{DynamicResource BottomRightMenuBorder}">
+                    <StackPanel Style="{DynamicResource BottomMenuRightPanel}">
+                            <Button Template="{DynamicResource BottomArrowButton}" Style="{DynamicResource BottomButtonStyle}">
+                                <Image Source="icons/bottom5.png" Style="{DynamicResource BottomArrowIcons}" />
+                    </Button>
+                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom6.png" Style="{DynamicResource BottomIcons}" />
+                    </Button>
+                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom7.png" Style="{DynamicResource BottomIcons}" />
+                    </Button>
+                            <Button Template="{DynamicResource BottomButton}" Style="{DynamicResource BottomButtonStyle}">
+                        <Image Source="icons/bottom8.png" Style="{DynamicResource BottomIcons}" />
+                    </Button>                    
+                </StackPanel>
+                    </Border>
+                </WrapPanel>                
+            </StatusBarItem>                            
+        </StatusBar>
         
+        <DockPanel>            
+        </DockPanel>
     </DockPanel>
 </Window>

@@ -2,4 +2,107 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     >
     
+    <ControlTemplate x:Key="BottomButton" TargetType="Button">
+        <Grid>            
+            <Border Width="40" Height="40">         
+            </Border>
+            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
+
+    <Style TargetType="Image" x:Key="BottomIcons">
+        <Style.Setters>
+            <Setter Property="MaxHeight" Value="25"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Image" x:Key="BottomArrowIcons">
+        <Style.Setters>
+            <Setter Property="MaxHeight" Value="22"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Border" x:Key="BottomLeftMenuBorder">
+        <Style.Setters>
+            <Setter Property="CornerRadius" Value="17 0 0 17"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="Background" Value="#D1E5FA"/>
+            <Setter Property="Opacity" Value="0.9"/>
+            <Setter Property="Height" Value="34"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Border" x:Key="BottomRightMenuBorder">
+        <Style.Setters>
+            <Setter Property="CornerRadius" Value="0 17 17 0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="Background" Value="#D1E5FA"/>
+            <Setter Property="Opacity" Value="0.9"/>
+            <Setter Property="Height" Value="34"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="WrapPanel" x:Key="BottomMenuOuterPanel">
+        <Style.Setters>
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="Height" Value="50"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="StackPanel" x:Key="BottomMenuLeftPanel">
+        <Style.Setters>
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="10 0 0 0"/>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="StackPanel" x:Key="BottomMenuRightPanel">
+        <Style.Setters>
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="0 0 10 0"/>
+        </Style.Setters>
+    </Style>
+
+    <ControlTemplate x:Key="BottomRoundButton" TargetType="Button">
+        <Grid>
+            <Border Width="50" Height="50" CornerRadius="25">
+                <Border.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0" Color="Aqua" />
+                        <GradientStop Offset="1.1" Color="Blue" />
+                    </RadialGradientBrush>
+                </Border.Background>
+            </Border>
+            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="BottomArrowButton" TargetType="Button">
+        <Grid>
+            <Border BorderThickness="1" Width="40" Height="30" BorderBrush="Gray" CornerRadius="12">                
+            </Border>
+            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+        </Grid>
+    </ControlTemplate>
+
+    <Style TargetType="Button" x:Key="BottomButtonStyle">
+        <Style.Setters>
+            <Setter Property="Opacity" Value="0.5"/>
+        </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Opacity" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="False">
+                <Setter Property="Opacity" Value="0.5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 </ResourceDictionary>
