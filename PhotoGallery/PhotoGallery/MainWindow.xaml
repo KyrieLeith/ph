@@ -18,10 +18,26 @@
     </Window.Resources>
     <DockPanel>
         <Border DockPanel.Dock="Top" Style="{DynamicResource TopMenuWrapper}">
-        <DockPanel>            
-            <StackPanel DockPanel.Dock="Right">
-
-            </StackPanel>
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Right" Style="{DynamicResource TopMenuArrowPanel}">
+                    <Menu Style="{DynamicResource TopMenuStyle}">
+                        <MenuItem Header="">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top9.png"/>
+                            </MenuItem.Icon>
+                            <MenuItem Header="Help" Style="{DynamicResource ChildItem}">
+                                <MenuItem.Icon>
+                                    <Image Source="icons/top11.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Exit">
+                            <MenuItem.Icon>
+                                <Image Source="icons/top10.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </Menu>
+            </WrapPanel>
             <WrapPanel DockPanel.Dock="Left" Style="{DynamicResource TopMenuArrowPanel}">
                     <Button Template="{DynamicResource TopArrowButton}">
                         <Image Source="icons/leftarr.png" Style="{DynamicResource TopArrowIcons}"/>
