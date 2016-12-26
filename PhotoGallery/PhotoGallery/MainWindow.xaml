@@ -240,66 +240,80 @@
                     </DockPanel>
                     <ScrollViewer>
                     <StackPanel Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Auto">
-                            <TextBlock Text="C:\Users\Public\Pictures - Items: 15" Style="{DynamicResource PathToFiles}"/>
-                            <Separator Height="2"/>
+                            <Grid Style="{DynamicResource ImagePanelGrid}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0"
+                                    Text="C:\Users\Public\Pictures - Items: 15" Style="{DynamicResource PathToFiles}"/>
+                                <Separator Grid.Column="1" Height="2"/>
+                            </Grid>                            
                             <ListBox Style="{DynamicResource ImagePanel}">                                
                                 <ListBoxItem>
                                     <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image2.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image3.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image4.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image5.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image6.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image7.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image8.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image9.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image10.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image11.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image12.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image13.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image14.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/image15.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                             </ListBox>
-                            <TextBlock Text="C:\Users\Public\Videos - Items: 3" Style="{DynamicResource PathToFiles}"/>
-                            <Separator Height="2"/>
+                            <Grid Style="{DynamicResource ImagePanelGrid}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0"
+                                    Text="C:\Users\Public\Videos - Items: 3" Style="{DynamicResource PathToFiles}"/>
+                                <Separator Grid.Column="1" Height="2" />
+                            </Grid>
                             <ListBox Style="{DynamicResource ImagePanel}">
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/video1.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/video2.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                                 <ListBoxItem>
-                                    <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
+                                    <Image Source="/icons/video3.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
                             </ListBox>
                         </StackPanel>

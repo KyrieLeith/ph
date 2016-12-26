@@ -251,7 +251,8 @@
 
     <Style TargetType="TextBlock" x:Key="PathToFiles">
         <Setter Property="Foreground" Value="#BFBFBF"/>
-        <Setter Property="Margin" Value="0 12 0 0"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Margin" Value="0 0 5 0"/>
     </Style>
 
     <Style TargetType="ListBox" x:Key="ImagePanel">
@@ -264,6 +265,10 @@
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style TargetType="Grid" x:Key="ImagePanelGrid">
+        <Setter Property="Margin" Value="0 10 0 0"/>
     </Style>
 
 </ResourceDictionary>
