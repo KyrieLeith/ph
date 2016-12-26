@@ -23,6 +23,8 @@ namespace PhotoGallery
         public MainWindow()
         {
             InitializeComponent();
+            List<string> vals = new List<string>() { "123", "123"};
+            ///Tree1.ItemsSource = vals;
         }
     }
 }

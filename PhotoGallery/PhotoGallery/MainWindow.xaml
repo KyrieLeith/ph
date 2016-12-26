@@ -182,10 +182,10 @@
                 </WrapPanel>                
             </StatusBarItem>                            
         </StatusBar>
-        
-        <DockPanel>
-            <DockPanel DockPanel.Dock="Left" Width="200">
-                <TreeView Style="{DynamicResource TreeStyle}">
+
+        <Border BorderThickness="1" BorderBrush="DarkGray" >
+            <DockPanel>
+                <TreeView Style="{DynamicResource TreeStyle}" x:Name="Tree1" DockPanel.Dock="Left" Width="200">
                     <TreeViewItem Header="All files" Style="{DynamicResource leftElement1}">
                         <TreeViewItem Header="Pictures" Style="{DynamicResource leftElement2}">
                         </TreeViewItem>
@@ -224,9 +224,7 @@
                         <TreeViewItem Header="Delete the label" Style="{DynamicResource leftElement9}"></TreeViewItem>
                     </TreeViewItem>
                 </TreeView>
-            </DockPanel>
-            <Border BorderThickness="0 1 1 1" >
-            <DockPanel Background="White">
+                <DockPanel Background="White">
                     <DockPanel DockPanel.Dock="Top" Style="{DynamicResource DataColumns}">
                         <WrapPanel DockPanel.Dock="Left" Orientation="Horizontal">
                             <Button Content="Name" Style="{DynamicResource TopButton}"/>
@@ -234,12 +232,14 @@
                             <Button Content="Size" Style="{DynamicResource TopButton}"/>
                             <Button Content="Type" Style="{DynamicResource TopButton}"/>
                         </WrapPanel>
-                        <TextBox DockPanel.Dock="Right" Style="{DynamicResource SearchBox}">                              
-                        </TextBox>
+                        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                            <TextBox  Style="{DynamicResource SearchBox}"/>
+                            <Image Source="/icons/search.png" Width="17" Margin="-45 0 0 0"/>
+                        </StackPanel>
                         <TextBlock/>
                     </DockPanel>
                     <ScrollViewer>
-                    <StackPanel Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <StackPanel Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Auto">
                             <Grid Style="{DynamicResource ImagePanelGrid}">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto"/>
@@ -248,8 +248,8 @@
                                 <TextBlock Grid.Column="0"
                                     Text="C:\Users\Public\Pictures - Items: 15" Style="{DynamicResource PathToFiles}"/>
                                 <Separator Grid.Column="1" Height="2"/>
-                            </Grid>                            
-                            <ListBox Style="{DynamicResource ImagePanel}">                                
+                            </Grid>
+                            <ListBox Style="{DynamicResource ImagePanel}">
                                 <ListBoxItem>
                                     <Image Source="/icons/image1.png" Style="{DynamicResource ImagePreview}"/>
                                 </ListBoxItem>
@@ -319,7 +319,7 @@
                         </StackPanel>
                     </ScrollViewer>
                 </DockPanel>
-            </Border>
-        </DockPanel>
+            </DockPanel>
+        </Border>
     </DockPanel>
 </Window>
