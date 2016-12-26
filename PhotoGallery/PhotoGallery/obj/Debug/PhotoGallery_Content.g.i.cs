@@ -8,14 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left3.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left4.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left5.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left6.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left7.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left8.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/left9.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/search.png")]
 
 

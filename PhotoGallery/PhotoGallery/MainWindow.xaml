@@ -185,7 +185,7 @@
         
         <DockPanel>
             <DockPanel DockPanel.Dock="Left" Width="200">
-                <TreeView>
+                <TreeView Style="{DynamicResource TreeStyle}">
                     <TreeViewItem Header="All files" Style="{DynamicResource leftElement1}">
                         <TreeViewItem Header="Pictures" Style="{DynamicResource leftElement2}">
                         </TreeViewItem>
@@ -225,9 +225,22 @@
                     </TreeViewItem>
                 </TreeView>
             </DockPanel>
-            <DataGrid>
-                
-            </DataGrid>
+            <Border BorderThickness="0 1 1 1" >
+            <DockPanel Background="White">
+                    <DockPanel DockPanel.Dock="Top" Style="{DynamicResource DataColumns}">
+                        <WrapPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                            <Button Content="Name" Style="{DynamicResource TopButton}"/>
+                            <Button Content="Date" Style="{DynamicResource TopButton}"/>
+                            <Button Content="Size" Style="{DynamicResource TopButton}"/>
+                            <Button Content="Type" Style="{DynamicResource TopButton}"/>
+                        </WrapPanel>
+                        <TextBox DockPanel.Dock="Right" Style="{DynamicResource SearchBox}">                              
+                        </TextBox>
+                        <TextBlock/>
+                    </DockPanel>
+                    <Grid></Grid>
+            </DockPanel>
+            </Border>
         </DockPanel>
     </DockPanel>
 </Window>
