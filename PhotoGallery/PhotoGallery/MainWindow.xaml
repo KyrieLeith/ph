@@ -4,8 +4,8 @@
         Title="Windows Live Photogallery"
         Height="400"
         Width="800"
-        MinHeight="300"
-        MinWidth="370"
+        MinHeight="400"
+        MinWidth="400"
         Icon="./icons/mainicon.ico"
         Style="{StaticResource WindowStyle}"
         >
@@ -238,8 +238,37 @@
                         </TextBox>
                         <TextBlock/>
                     </DockPanel>
-                    <Grid></Grid>
-            </DockPanel>
+                    <ScrollViewer>
+                    <StackPanel Orientation="Vertical" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <TextBlock Text="C:\Users\Public\Pictures - Items: 15" Foreground="#BFBFBF"/>
+                            <Separator Height="2"/>
+                            <WrapPanel Orientation="Horizontal">
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                                <Button Content="123" Width="50" Height="50" />
+                                <Button Content="123" Width="50" Height="50" />
+                            </WrapPanel>
+                            <TextBlock Text="C:\Users\Public\Videos - Items: 3" Foreground="#BFBFBF"/>
+                            <Separator Height="2"/>
+                            <WrapPanel Orientation="Horizontal">
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                            <Button Content="123" Width="50" Height="50" />
+                        </WrapPanel>
+                    </StackPanel>
+                    </ScrollViewer>
+                </DockPanel>
             </Border>
         </DockPanel>
     </DockPanel>

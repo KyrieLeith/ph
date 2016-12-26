@@ -235,7 +235,7 @@
     <Style TargetType="TextBox" x:Key="SearchBox">
         <Style.Setters>
             <Setter Property="Text" Value="Search..." />
-            <Setter Property="Foreground" Value="LightGray" />
+            <Setter Property="Foreground" Value="#BFBFBF" />
             <Setter Property="Width" Value="150" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="Margin" Value="0 2 10 2" />
