@@ -4,16 +4,33 @@
     
     <ControlTemplate x:Key="BottomButton" TargetType="Button">
         <Grid>            
-            <Border Width="40" Height="40">         
+            <Border Width="40" Height="40">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="White" Offset="0.1" />
+                        <GradientStop Color="#94abd1" Offset="0.5" />
+                        <GradientStop Color="White" Offset="0.9" />
+                    </LinearGradientBrush>
+                </Border.Background>
             </Border>
             <ContentPresenter HorizontalAlignment="Center"
                                   VerticalAlignment="Center"/>
         </Grid>
+        <ControlTemplate.Triggers>
+            
+        </ControlTemplate.Triggers>
     </ControlTemplate>
 
     <ControlTemplate x:Key="BottomRightButton" TargetType="Button">
         <Grid>
             <Border Width="30" Height="40">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="White" Offset="0.1" />
+                        <GradientStop Color="#94abd1" Offset="0.5" />
+                        <GradientStop Color="White" Offset="0.9" />
+                    </LinearGradientBrush>
+                </Border.Background>
             </Border>
             <ContentPresenter HorizontalAlignment="Center"
                                   VerticalAlignment="Center"/>
@@ -34,7 +51,7 @@
 
     <Style TargetType="Image" x:Key="BottomArrowIcons">
         <Style.Setters>
-            <Setter Property="MaxHeight" Value="22"/>
+            <Setter Property="MaxHeight" Value="22"/>                 
         </Style.Setters>
     </Style>
 
@@ -72,6 +89,7 @@
             <Setter Property="Orientation" Value="Horizontal"/>
             <Setter Property="Height" Value="30"/>
             <Setter Property="Margin" Value="10 0 0 0"/>
+
         </Style.Setters>
     </Style>
 
@@ -87,10 +105,11 @@
         <Grid>
             <Border Width="50" Height="50" CornerRadius="25">
                 <Border.Background>
-                    <RadialGradientBrush>
-                        <GradientStop Offset="0" Color="Aqua" />
-                        <GradientStop Offset="1.1" Color="Blue" />
-                    </RadialGradientBrush>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="Aqua" Offset="-0.1" />
+                        <GradientStop Color="Blue" Offset="0.5" />
+                        <GradientStop Color="#94abd1" Offset="0.9" />
+                    </LinearGradientBrush>
                 </Border.Background>
             </Border>
             <ContentPresenter HorizontalAlignment="Center"
@@ -100,7 +119,14 @@
 
     <ControlTemplate x:Key="BottomArrowButton" TargetType="Button">
         <Grid>
-            <Border BorderThickness="1" Width="40" Height="30" BorderBrush="Gray" CornerRadius="12">                
+            <Border BorderThickness="1" Width="40" Height="30" BorderBrush="Gray" CornerRadius="12">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="White" Offset="0.1" />
+                        <GradientStop Color="#94abd1" Offset="0.5" />
+                        <GradientStop Color="White" Offset="0.9" />
+                    </LinearGradientBrush>
+                </Border.Background>
             </Border>
             <ContentPresenter HorizontalAlignment="Center"
                                   VerticalAlignment="Center"/>
@@ -110,13 +136,31 @@
     <Style TargetType="Button" x:Key="BottomButtonStyle">
         <Style.Setters>
             <Setter Property="Opacity" Value="0.5"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="#5197BF" Offset="0" />
+                        <GradientStop Color="#0D659C" Offset="0.5" />
+                        <GradientStop Color="#5197BF" Offset="1" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Opacity" Value="1"/>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                                <GradientStop Color="#5197BF" Offset="0" />
+                                <GradientStop Color="#0D659C" Offset="0.5" />
+                                <GradientStop Color="#5197BF" Offset="1" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
             </Trigger>
             <Trigger Property="IsMouseOver" Value="False">
-                <Setter Property="Opacity" Value="0.5"/>
+                <Setter Property="Opacity" Value="0.7"/>
             </Trigger>
         </Style.Triggers>
     </Style>
