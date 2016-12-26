@@ -13,6 +13,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Themes/Generic.xaml"/>
+                <ResourceDictionary Source="Themes/LeftPanel.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -185,42 +186,42 @@
         <DockPanel>
             <DockPanel DockPanel.Dock="Left" Width="200">
                 <TreeView>
-                    <TreeViewItem Header="All files">
-                        <TreeViewItem Header="Pictures" >
+                    <TreeViewItem Header="All files" Style="{DynamicResource leftElement1}">
+                        <TreeViewItem Header="Pictures" Style="{DynamicResource leftElement2}">
                         </TreeViewItem>
-                        <TreeViewItem Header="Video"></TreeViewItem>
-                        <TreeViewItem Header="Shared pictures"></TreeViewItem>
-                        <TreeViewItem Header="Shared video"></TreeViewItem>
+                        <TreeViewItem Header="Video" Style="{DynamicResource leftElement3}"></TreeViewItem>
+                        <TreeViewItem Header="Shared pictures" Style="{DynamicResource leftElement4}"></TreeViewItem>
+                        <TreeViewItem Header="Shared video" Style="{DynamicResource leftElement4}"></TreeViewItem>
                     </TreeViewItem>
-                    <TreeViewItem Header="Date">
-                        <TreeViewItem Header="2004">
-                            <TreeViewItem Header="January"></TreeViewItem>
-                            <TreeViewItem Header="February"></TreeViewItem>
-                            <TreeViewItem Header="March"></TreeViewItem>
-                            <TreeViewItem Header="April"></TreeViewItem>
+                    <TreeViewItem Header="Date" Style="{DynamicResource leftElement5}">
+                        <TreeViewItem Header="2004" Style="{DynamicResource leftElement6}">
+                            <TreeViewItem Header="January" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="February" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="March" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="April" Style="{DynamicResource leftElement6}"></TreeViewItem>
                         </TreeViewItem>
-                        <TreeViewItem Header="2005">
-                            <TreeViewItem Header="January"></TreeViewItem>
-                            <TreeViewItem Header="February"></TreeViewItem>
-                            <TreeViewItem Header="March"></TreeViewItem>
-                            <TreeViewItem Header="April"></TreeViewItem>
+                        <TreeViewItem Header="2005" Style="{DynamicResource leftElement6}">
+                            <TreeViewItem Header="January" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="February" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="March" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="April" Style="{DynamicResource leftElement6}"></TreeViewItem>
                         </TreeViewItem>
-                        <TreeViewItem Header="2006">
-                            <TreeViewItem Header="January"></TreeViewItem>
-                            <TreeViewItem Header="February"></TreeViewItem>
-                            <TreeViewItem Header="March"></TreeViewItem>
-                            <TreeViewItem Header="April"></TreeViewItem>
+                        <TreeViewItem Header="2006" Style="{DynamicResource leftElement6}">
+                            <TreeViewItem Header="January" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="February" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="March" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="April" Style="{DynamicResource leftElement6}"></TreeViewItem>
                         </TreeViewItem>
-                        <TreeViewItem Header="2007">
-                            <TreeViewItem Header="January"></TreeViewItem>
-                            <TreeViewItem Header="February"></TreeViewItem>
-                            <TreeViewItem Header="March"></TreeViewItem>
-                            <TreeViewItem Header="April"></TreeViewItem>
+                        <TreeViewItem Header="2007" Style="{DynamicResource leftElement6}">
+                            <TreeViewItem Header="January" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="February" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="March" Style="{DynamicResource leftElement6}"></TreeViewItem>
+                            <TreeViewItem Header="April" Style="{DynamicResource leftElement6}"></TreeViewItem>
                         </TreeViewItem>
                     </TreeViewItem>
-                    <TreeViewItem Header="Labels">
-                        <TreeViewItem Header="Add a new label"></TreeViewItem>
-                        <TreeViewItem Header="Delete the label"></TreeViewItem>
+                    <TreeViewItem Header="Labels" Style="{DynamicResource leftElement7}">
+                        <TreeViewItem Header="Add a new label" Style="{DynamicResource leftElement8}"></TreeViewItem>
+                        <TreeViewItem Header="Delete the label" Style="{DynamicResource leftElement9}"></TreeViewItem>
                     </TreeViewItem>
                 </TreeView>
             </DockPanel>
