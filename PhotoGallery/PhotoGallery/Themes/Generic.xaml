@@ -196,19 +196,79 @@
         </Style.Setters>
     </Style>
 
-    <Style TargetType="{x:Type TreeViewItem}">
-        <Setter Property="HeaderTemplate">
+    <Style TargetType="TreeView" x:Key="TreeStyle">
+        <Style.Setters>
+            <Setter Property="BorderThickness" Value="0" />
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Button" x:Key="TopButton">
+        <Style.Setters>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="#F0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.7"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="0 3 30 3" />
+            <Setter Property="Width" Value="80" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="#CDCDCD" />
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="DockPanel" x:Key="DataColumns">
+        <Style.Setters>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                        <GradientStop Color="#F0F0F0" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.7"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="TextBox" x:Key="SearchBox">
+        <Style.Setters>
+            <Setter Property="Text" Value="Search..." />
+            <Setter Property="Foreground" Value="#BFBFBF" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0 2 10 2" />
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="Image" x:Key="ImagePreview">
+        <Style.Setters>
+            <Setter Property="Width" Value="85" />
+            <Setter Property="Height" Value="85" />
+        </Style.Setters>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="PathToFiles">
+        <Setter Property="Foreground" Value="#BFBFBF"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Margin" Value="0 0 5 0"/>
+    </Style>
+
+    <Style TargetType="ListBox" x:Key="ImagePanel">
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ItemsPanel">
             <Setter.Value>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Name="img"
-                           Width="20"
-                           Height="20"
-                           Source="{Binding }"/>
-                        <TextBlock Text="{Binding}" Margin="5,0" />
-                    </StackPanel>
-                </DataTemplate>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style TargetType="Grid" x:Key="ImagePanelGrid">
+        <Setter Property="Margin" Value="0 10 0 0"/>
+    </Style>
+
 </ResourceDictionary>

@@ -70,3 +70,4 @@ C:\Users\eab14\Documents\temp\git2\PhotoGallery\PhotoGallery\obj\Debug\App.baml
 C:\Users\eab14\Documents\temp\git2\PhotoGallery\PhotoGallery\obj\Debug\PhotoGallery.g.resources
 C:\Users\eab14\Documents\temp\git2\PhotoGallery\PhotoGallery\obj\Debug\PhotoGallery.Properties.Resources.resources
 C:\Users\eab14\Documents\temp\git2\PhotoGallery\PhotoGallery\obj\Debug\PhotoGallery.csproj.GenerateResource.Cache
+C:\Users\eab14\Documents\temp\git\PhotoGallery\PhotoGallery\obj\Debug\Themes\LeftPanel.baml

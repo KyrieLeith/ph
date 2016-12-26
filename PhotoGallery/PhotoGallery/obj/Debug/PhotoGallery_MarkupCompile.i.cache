@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\eab14\Documents\temp\git2\PhotoGallery\PhotoGallery\obj\Debug\
+C:\Users\eab14\Documents\temp\git\PhotoGallery\PhotoGallery\obj\Debug\
 PhotoGallery
 none
 false
 DEBUG;TRACE
-C:\Users\eab14\Documents\temp\git2\PhotoGallery\PhotoGallery\App.xaml
-3-352833858
+C:\Users\eab14\Documents\temp\git\PhotoGallery\PhotoGallery\App.xaml
+4323293936
 
 10-1943272385
 13-1142990016
-MainWindow.xaml;Styles\CustomizedWindow\WindowStyle.xaml;Themes\Generic.xaml;
+MainWindow.xaml;Styles\CustomizedWindow\WindowStyle.xaml;Themes\Generic.xaml;Themes\LeftPanel.xaml;
 
 False
 
